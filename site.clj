@@ -9,8 +9,10 @@
    [:head
     [:meta {:charset "utf-8"}]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
+    [:link {:href "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            :rel "stylesheet"}]
     [:title "Titel"]]
-   [:body
+   [:body.container.pt-3
     [:div#main
      content]]])
 
@@ -28,7 +30,7 @@
 (defn index-page []
   (base
    [:h1 "#TimeTracker"]
-   [:table
+   [:table.table.table-striped.table-hover
     [:thead
      [:tr
       [:th "Datum"]

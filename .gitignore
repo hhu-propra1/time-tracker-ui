@@ -1,3 +1,4 @@
 .cache/
 .calva/
 *.html
+node_modules/
