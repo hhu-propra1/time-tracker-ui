@@ -4,8 +4,6 @@
             [hiccup2.core :as html]
             [timetracker :as tt]))
 
-;; C-c C-c zum S-Expression evaluieren
-
 (defn base [& content]
   [:html {:lang "de"}
    [:head
@@ -60,7 +58,15 @@
         labels: [%s],
         datasets: [{
           label: 'Timetracker',
-          data: [%s]
+          data: [%s],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
         }]
       }
       const config = {
@@ -85,6 +91,7 @@
       [:th "Beschreibung"]]]
     [:tbody
      (map row->tr (tt/rows))]]
+   [:h2 "Projektzeitverteilung"]
    chart))
 
 ;; -----------------------------------------------------------------------------
