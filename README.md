@@ -37,6 +37,8 @@ REPL.
 
 Start by opening `src/site.clj` in your editor. Then start a REPL and connect to it:
 
+https://user-images.githubusercontent.com/1507474/175259715-c70e0325-8b06-482b-be5f-77ad2fa76a4c.mp4
+
 ### Shortcut Advices
 
 It is especially great if you have a REPL to be able to interact with the code directly from the editor. There are a few keyboard shortcuts for this, which you can
